@@ -1,27 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site CI/CD</title>
-    <style> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página Simples</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-    background-color: black
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
     }
-    h1{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color:blueviolet
+    h1 {
+        color: red
     }
-    h2{
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color:blueviolet
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    
-    </style>
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+  
+  </style>
 </head>
 <body>
-    <h1>Deploy Automatizado com GitHub Actions e Azure</h1>
+
+  <header>
+    <h1>Bem-vindo à Minha Página</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Olá!</h2>
+    <p>Este é um Deploy Automatizado com GitHub Actions e Azure</p>
+  </section>
+ 
 </body>
 </html>
